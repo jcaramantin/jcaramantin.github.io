@@ -1,0 +1,29 @@
+{
+  "name": "zerohoushou.github.io",
+  "version": "1.0.0",
+  "description": "Jhoan Caramantin(ZeroHoushou) Website",
+  "main": "index.js",
+  "scripts": {
+    "dev" : "next dev -H 0.0.0.0",
+    "build": "next build",
+    "prettier": "prettier -writer .",
+    "lint": "next lint"
+  },
+  "keywords": [],
+  "author": "jhoan1915@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "framer-motion": "^10.16.16",
+    "next": "^14.0.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-next": "^14.0.4",
+    "prettier": "^3.1.1"
+  }
+}
