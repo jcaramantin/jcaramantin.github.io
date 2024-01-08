@@ -4,7 +4,7 @@
   "description": "Jhoan Caramantin(ZeroHoushou) Website",
   "main": "index.js",
   "scripts": {
-    "dev" : "next dev -H 0.0.0.0",
+    "dev": "next dev -H 0.0.0.0",
     "build": "next build",
     "prettier": "prettier -writer .",
     "lint": "next lint"
@@ -13,6 +13,7 @@
   "author": "jhoan1915@gmail.com",
   "license": "MIT",
   "dependencies": {
+    "@chakra-ui/icons": "^2.1.1",
     "@chakra-ui/react": "^2.8.1",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
@@ -27,4 +28,4 @@
     "eslint-config-next": "^14.0.4",
     "prettier": "^3.1.1"
   }
-  }
+}

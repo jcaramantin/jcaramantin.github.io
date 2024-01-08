@@ -11,6 +11,7 @@ const Page = () => {
                     <Heading as="h2" size="lg" mb={2} variant="page-title">
                         Jhoan Caramantin
                     </Heading>
+                    <p>( Desarrollador Full Stack / Ingeniero de Software / Artista ) </p>
                 </Box>
             </Box>
         </Container>
