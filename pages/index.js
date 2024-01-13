@@ -1,4 +1,9 @@
-import { Container, Box, Heading, Image, useColorModeValue } from "@chakra-ui/react";
+import { Container, Box, Heading, Image, useColorModeValue, Button } from "@chakra-ui/react";
+import Section from "../components/section";
+import Paragraph from "../components/paragraph";
+import { ChevronRightIcon } from "@chakra-ui/icons";
+import NextLink from 'next/link'
+
 
 const Page = () => {
     return (
@@ -18,6 +23,23 @@ const Page = () => {
                             display="inline-block" borderRadius="full" src="/images/pfp.jpg" alt="ZHpfp"/>
                 </Box>
             </Box>
+            <Section delay={0.1}>
+                <Heading as='h3' variant='section-title'>
+                    Proyectos
+                </Heading>
+                <Paragraph>Hola soy Jhoan Caramantin Llacsa, soy Ingeniero de Software y desarrollador Full-stack,
+                    apasionado por el desarrollo de software y la tecnología. Me gusta aprender nuevas tecnologías y 
+                    aplicarlas en la solución de problemas de la actualidad. Me gusta el arte y la música, en mis tiempos libres
+                    las practico.
+                </Paragraph>
+                <Box align="center" my={4}>
+                    <NextLink href="/works">
+                        <Button rightIcon={<ChevronRightIcon/>} colorScheme="teal">
+                            Mis proyectos
+                        </Button>
+                    </NextLink>
+                </Box>
+            </Section>
         </Container>
         
     )
