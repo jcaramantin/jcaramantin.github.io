@@ -4,7 +4,7 @@ import Paragraph from "../components/paragraph";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import NextLink from 'next/link'
 import { BioSection, BioYear } from "../components/bio";
-import Head from "next/head";
+
 
 const Page = () => {
     return (
