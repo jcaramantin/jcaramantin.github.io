@@ -3,7 +3,8 @@ import Section from "../components/section";
 import Paragraph from "../components/paragraph";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import NextLink from 'next/link'
-
+import { BioSection, BioYear } from "../components/bio";
+import Head from "next/head";
 
 const Page = () => {
     return (
@@ -24,8 +25,8 @@ const Page = () => {
                 </Box>
             </Box>
             <Section delay={0.1}>
-                <Heading as='h3' variant='section-title'>
-                    Proyectos
+                <Heading as='h3' size="lg" variant='section-title'>
+                    Sobre mí
                 </Heading>
                 <Paragraph>Hola soy Jhoan Caramantin Llacsa, soy Ingeniero de Software y desarrollador Full-stack,
                     apasionado por el desarrollo de software y la tecnología. Me gusta aprender nuevas tecnologías y 
@@ -40,6 +41,38 @@ const Page = () => {
                     </NextLink>
                 </Box>
             </Section>
+
+            <Section delay={0.2}>
+                <Heading as='h3' size="lg" variant="section-title">
+                    Biografía
+                </Heading>
+                <BioSection>
+                    <BioYear>2000</BioYear>
+                    Nací en Lima, Perú.
+                </BioSection>
+                <BioSection>
+                    <BioYear>2021</BioYear>
+                    Trabajé como Analista de Sistemas en la empresa <a href="https://www.linkedin.com/company/cottonknit/" target="_blank">Cotton Knit</a>,
+                    desarrollando aplicaciones de escritorio, web y móviles para la gestión de la empresa y control de producción textil.
+                </BioSection>
+                <BioSection>
+                    <BioYear>2022 al presente</BioYear>
+                    Actualmente trabajo como Analista Programador en la empresa <a href="https://www.linkedin.com/company/sanms-servicios-de-ingenieria-s-a/mycompany/" target="_blank">SANMS</a>,
+                    en el cual desarrollo software de criptografía y seguridad informática.
+                </BioSection>
+                <BioSection>
+                    <BioYear>2023</BioYear>
+                    Completé mis estudios universtarios en la Universidad Nacional Mayor de San Marcos, 
+                    obteniendo el título de  Bachiller en Ingeniería de Software.
+                </BioSection>
+            </Section>
+
+            <Section delay={0.3}>
+                <Heading as='h3' size="lg" variant="section-title">Interéses♥</Heading>
+                <Paragraph>Programación, Música, Arte, Dibujo, Fotografía, Machine Learning</Paragraph>
+
+            </Section>
+
         </Container>
         
     )
