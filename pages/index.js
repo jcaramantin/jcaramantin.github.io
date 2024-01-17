@@ -25,7 +25,7 @@ const Page = () => {
                 </Box>
             </Box>
             <Section delay={0.1}>
-                <Heading as='h3' size="lg" variant='section-title'>
+                <Heading as="h3" variant="section-title">
                     Sobre mí
                 </Heading>
                 <Paragraph>Hola soy Jhoan Caramantin Llacsa, soy Ingeniero de Software y desarrollador Full-stack,
@@ -43,7 +43,7 @@ const Page = () => {
             </Section>
 
             <Section delay={0.2}>
-                <Heading as='h3' size="lg" variant="section-title">
+                <Heading as="h3" variant="section-title">
                     Biografía
                 </Heading>
                 <BioSection>
