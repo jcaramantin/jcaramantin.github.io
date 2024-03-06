@@ -51,7 +51,7 @@ const Navbar = props =>{
                 mt={{base:4,nmd:0}}
                 >
                     <LinkItem href="/info" path={path}>Información</LinkItem>
-                    <LinkItem href="/proyectos" path={path}>Proyectos</LinkItem>
+                    <LinkItem href="/works" path={path}>Proyectos</LinkItem>
                     <LinkItem href="/contacto" path={path}>Contacto</LinkItem>
                 </Stack>
 

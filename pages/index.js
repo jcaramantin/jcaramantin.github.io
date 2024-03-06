@@ -4,10 +4,11 @@ import Paragraph from "../components/paragraph";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import NextLink from 'next/link'
 import { BioSection, BioYear } from "../components/bio";
-
+import Layout from "../components/layouts/article";
 
 const Page = () => {
     return (
+        <Layout>
         <Container>
             <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={4} mb={6} align="center">
                 <div>Welcome to Jhoan Caramantin Website</div>
@@ -68,13 +69,13 @@ const Page = () => {
             </Section>
 
             <Section delay={0.3}>
-                <Heading as='h3' size="lg" variant="section-title">Interéses♥</Heading>
+                <Heading as='h3' size="lg" variant="section-title">Intereses</Heading>
                 <Paragraph>Programación, Música, Arte, Dibujo, Fotografía, Machine Learning</Paragraph>
 
             </Section>
 
         </Container>
-        
+    </Layout>
     )
 }
 export default Page;
