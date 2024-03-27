@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import {Box, Container} from '@chakra-ui/react'
 import Navbar from '../navbar'
-
+import NoSsr from '../no-ssr'
+import PfpModel from '../pfp-model'
 
 const Main = ({children,router}) =>{
     return(
@@ -12,6 +13,9 @@ const Main = ({children,router}) =>{
             </Head>
             <Navbar path={router.asPath}/>
             <Container maxW="container.md" pt={14}>
+                <NoSsr>
+                    <PfpModel/>
+                </NoSsr>
                 {children}
             </Container>
         </Box>
